@@ -9,6 +9,106 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="lolofiles/index.css" media="screen">
+    <style type="text/css">
+		/*---微信提示--*/
+		.weixin-download-tip {
+			border: 1px dashed #DFDFDF;
+			text-align: center;
+			width: 280px;
+			margin: 20px auto;
+			padding: 5px;
+			background-color: #fdfdfd;
+		}
+		.animation {
+			-webkit-animation-duration: .5s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+		}
+		.alert-app-store{
+			display: none;
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: 30;
+			overflow: hidden;
+		}
+		.iphone-alert-text,
+		.android-alert-text{
+			border-radius: 2px;
+			margin: 10px auto;
+			overflow: hidden;
+		}
+		/*.iphone-alert-text{
+			background-image: url('');
+			background-repeat: no-repeat;
+			-webkit-background-size: 100%;
+				 -o-background-size: 100%;
+					background-size: 100%;
+			width: 95%;
+			height: 110px;
+		}*/
+		.android-alert-text {
+			background-color: #FFF;
+			margin: 5px;
+			padding: 10px 10px 0;
+		}
+		.weixin-alert-info-icon,
+		.android-weixin-download-alert-title{
+			float: left;
+		}
+		.android-weixin-download-alert-title{
+			margin-bottom: 0;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 1.3;
+		}
+		.weixin-alert-info-icon{
+			width: 15px;
+			height: 15px;
+			background: url('image/weixin-download-alert-info-icon.png');
+			-webkit-background-size: 15px;
+				 -o-background-size: 15px;
+					background-size: 15px;
+			display: inline-block;
+			margin: 3px 5px 0 0;
+		}
+		.android-weixin-download-alert-title-wrapper{
+			color: #ffa200;
+			font-weight: bold;
+			margin-bottom: 5px;
+			clear: both;
+			overflow: hidden;
+		}
+
+		.android-weixin-download-alert-special{
+			font-weight: bold;
+			color: #009ef0;
+			font-size: 18px;
+		}
+		.android-weixin-download-alert-des{
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		._view{
+			overflow: hidden;
+		}
+
+		.fadein {
+			display: block;
+			-webkit-animation-name: fadein;
+			-webkit-animation-duration: .2s;
+		}
+		.fadeout {
+			-webkit-animation-name: fadeout;
+			-webkit-animation-duration: .2s;
+		}
+	</style>
     <!-- lolo script -->
     <script language="javascript">
     function change_d_url(){
@@ -33,15 +133,18 @@
       <a href="https://github.com/w62658649/wanshuangbbs.com/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/w62658649/wanshuangbbs.com/tarball/master" class="btn">Download .tar.gz</a>
     </section>
+    
+	
 
     <section class="main-content">
     
-    <div class="index_d">
-			<a id="ios_d_1" class="download-iphone mobile-iphone download-button mobile-download" href="https://itunes.apple.com/cn/app/lou-lou/id947279472?mt=8"><img src="./楼楼_files/ios.png" alt=""></a>
-			<a id="android_d_1" class="download-android download-button mobile-android mobile-download" href="http://www.lolosns.com/download/android/V1.1/lolo.apk"><img src="./楼楼_files/android.png" alt=""></a>
-			<a href=""><img src="./楼楼_files/160x160.png" alt=""></a>
+    <div class="index_h"></div>
+	<div class="index_d">
+			<a id="ios_d_1" class="download-iphone mobile-iphone download-button mobile-download" href="https://itunes.apple.com/cn/app/lou-lou/id947279472?mt=8"><img src="./lolofiles/ios.png" alt=""></a>
+			<a id="android_d_1" class="download-android download-button mobile-android mobile-download" href="http://www.lolosns.com/download/android/V1.1/lolo.apk"><img src="./lolofiles/android.png" alt=""></a>
+			<a href=""><img src="./lolofiles/160x160.png" alt=""></a>
 	</div>
-    
+	
       <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
